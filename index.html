@@ -1,0 +1,531 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahana | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assests/profile.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+  <div id="particles-js"></div>
+
+
+<!-- Burger Icon (Top Right) -->
+<div class="burger" id="burger">
+  <i class="fas fa-bars" id="burger-icon"></i>
+</div>
+
+<!-- Sidebar Navigation -->
+<nav class="sidebar" id="sidebar">
+  <div class="profile">
+    <img src="assets/profile.jpg" alt="Profile" />
+    <h2>Sahana</h2>
+   
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sahana-m-9b017a284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/sahasaha_m23?igsh=MTJlaHRiOHdvMXJ5Nw=="><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home"><i class="fas fa-house-user"></i> Home</a></li>
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+    <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <footer class="sidebar-footer">
+  <p>&copy; 2025 Sahana. All rights reserved.</p>
+</footer>
+</nav>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+
+
+<!-- Main Content -->
+<div class="main-content">
+     
+      <!-- Lottie animation -->
+      <lottie-player
+        src="assets/lottie/animation-blue.json"
+        background="transparent"
+        speed="1"
+        style="width: 100px; height: 100px"
+        class="lottie-top-right"
+        loop
+         autoplay>
+      </lottie-player>
+
+
+  <!-----------------------Hero Section------------------->
+
+  <section class="hero" id="home">
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Hi, I'm <span class="name">Sahana</span></h1>
+      <h2><span class="typewrite" data-period="2000" data-type='["AI Enthusiast 🚀","MERN-Stack Developer 💻","Data Science Student 📊","Tech Explorer 🌐, Data Analyst 📊"]'></span></h2>
+      <p> Passionate about transforming data into actionable insights using AI and full-stack development — delivering intelligent, sustainable digital solutions....</p>
+      <div class="buttons">
+        <a href="#about" class="btn-hero ">Explore More!</a>
+        <a href="assets/resume.pdf" target="_blank" class="btn-hero" aria-label="View Sahana's CV">View CV</a>
+      </div>
+    </div>
+  </section>
+
+<!------------------ Hero Section End -------------------------->
+
+
+
+<!-----------------------About Section------------------------------->
+<section class="about-section" id="about">
+  <h2 class="section-title" data-aos="fade-down">👤 About Me</h2>
+
+  <div class="about-container">
+    <!-- Profile Image + Info -->
+    <div class="about-img" data-aos="zoom-in">
+      <div class="profile-pic-wrapper">
+        <img src="assets/profile.jpg" alt="Sahana's Profile">
+        <div class="profile-glow"></div>
+      </div>
+      <div class="profile-info">
+        <div class="typing-role" id="typed-role"></div>
+        <p>📍 <strong>Location:</strong> Tamil Nadu, India</p>
+        <p>📧 <strong>Email:</strong> sahanaccet@gmail.com.com</p>
+        <p>🟢 <strong>Available for:</strong> Internships, Freelance & Full-Time job</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="about-content" data-aos="fade-left">
+      <h3>Hi, I’m <span>Sahana...</span> 👩‍💻</h3>
+      <p>
+        A passionate <strong>B.Tech AI & DS student</strong> who loves turning ideas into intelligent, sustainable digital solutions. I specialize in full-stack web development, data analytics, and AI/ML applications. With strong communication skills and a drive to innovate, I’m always eager to explore the next challenge.
+      </p>
+
+      <!-- Career Goals -->
+      <div class="objective">
+        <h4>🎯 Career Objective</h4>
+        <p>
+          To leverage AI & software engineering to create ethical, impactful tech solutions that improve lives and support sustainable development.
+        </p>
+      </div>
+
+      <!-- Highlights -->
+      <div class="highlights-grid">
+        <div class="highlight-item">🎓 CGPA: 8.6</div>
+        <div class="highlight-item">💼 EX-Intern @ IBM, Edunet, CodeAlpha</div>
+        <div class="highlight-item">🗣️ Languages: English, Tamil, Hindi</div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <a href="assets/resume.pdf" class="btn" target="_blank">📄 View Resume</a>
+        <a href="https://github.com/yourprofile" class="btn" target="_blank">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/sahana-m-9b017a284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn" target="_blank">🔗 LinkedIn</a>
+      </div>
+
+      <!-- Quote -->
+      <blockquote>
+        “Tech should be human-first. I code with impact in mind.” 💡
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!----------------------- About Section End ------------------------------->
+
+ <!---------------------education section --------------------------> 
+
+
+ 
+ <section class="education-roadmap" id="education">
+  <h2 class="section-title">Education Journey</h2>
+  <div class="road-container">
+    <div class="road-line"></div>
+
+    <!-- Car -->
+    <div class="car" id="car">⏬</div>
+
+    <!-- Education Milestones -->
+   <div class="edu-group">
+    <div class="edu-logo" style="top: 40px;" >🏫</div>
+    <div class="edu-branch left" style="top: 1px;">
+      <div class="edu-info">
+        <h3>SSLC - SEVAI Shanthi Matric Higher Secondary School.</h3><br>
+        <p>Percentage : 91% | 2018 – 2019<br>Group : Bio-Maths</p>
+      </div>
+    </div>
+   </div>  
+   
+   <div class="edu-group">
+    <div class="edu-branch right">
+      <div class="edu-logo" style="left: -90px;">🏫</div>
+      <div class="edu-info">
+        <h3>HSLC - SEVAI Shanthi Matric Higher Secondary School.</h3><br>
+        <p>Percentage : 81% | 2019 – 2020<br></p>
+      </div>
+    </div>
+  </div>
+
+   <div class="edu-group"> 
+    <div class="edu-logo" style="top: 20px;">🎓</div>
+    <div class="edu-branch left" style="top: -34px; " >
+      <div class="edu-info">
+        <h3>Chettinad College of Engineering & Technology.<h3>
+        <p >B.Tech AI & DS | 2022 – 2026<br> CGPA: 8.6</p>
+      </div>
+    </div>
+   </div> 
+  </div>
+  
+ </section>
+
+
+<!---------------------end education section -------------------------->  
+
+<!------------------- Skills Section ----------------------->
+
+ <section class="skills-grid-section" id="skills">
+  <h2 class="section-title" data-aos="zoom-in">✨ My Skillset</h2>
+
+  <div class="skills-grid">
+    
+    <div class="skill-card" data-aos="fade-up">
+      <h3><i class="fas fa-code"></i> Programming</h3>
+      <ul>
+        <li data-tooltip="Python scripting, OOP, problem solving">Python</li>
+        <li data-tooltip="Web dev logic & dynamic code">JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <h3><i class="fas fa-globe"></i> Web Dev</h3>
+      <ul>
+        <li data-tooltip="Beautiful layouts, responsive design">HTML & CSS</li>
+        <li data-tooltip="Projects with React + Node.js">React, Node.js</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <h3><i class="fas fa-tools"></i> Tools</h3>
+      <ul>
+        <li data-tooltip="Dashboards, storytelling">Power BI, Tableau</li>
+        <li data-tooltip="Version control, collaboration">Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <h3><i class="fas fa-brain"></i> Libraries</h3>
+      <ul>
+        <li data-tooltip="AI/ML/Data projects">NumPy, Pandas, Matplotlib</li>
+        <li data-tooltip="AI modeling">Scikit-Learn</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <h3><i class="fas fa-terminal"></i> OS Handling</h3>
+      <ul>
+        <li data-tooltip="Command-line, dev environments">Windows, Kali Linux, Ubuntu</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up">
+      <h3><i class="fas fa-dna"></i> Other Domains</h3>
+      <ul>
+        <li data-tooltip="Projects, competitions">Data Science, Cloud Basics, Networks</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="projects-link" data-aos="zoom-in"  >
+    <a href="#projects" class="view-projects-btn">🎯 View My projects</a>
+  </div>
+
+
+  
+ </section>
+
+  
+
+
+
+
+ <!------------------- Skills Section End -----------------------> 
+
+
+
+<!--------------------- projects section -------------------------->
+
+ <section id="projects" class="section projects">
+  <h2 class="section-title">🚀 My Projects</h2>
+  <div class="projects-container">
+    
+    <!-- Project 1 -->
+    <div class="flip-card" data-aos="zoom-in">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3><i class="fas fa-leaf"></i> Carbon Footprint Tracker</h3>
+          <p>Smart tool using NLP & ML to track and reduce emissions.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>🌐 View Project</h4>
+          <a href="https://live-carbon-tool.com" target="_blank" class="btn">🔗 Live Demo</a>
+          <a href="https://github.com/user/carbon-tracker" target="_blank" class="btn">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="flip-card" data-aos="zoom-in">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3><i class="fas fa-bug"></i> Plant Disease Detector</h3>
+          <p>DL model to detect plant diseases & suggest treatments.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>🌐 View Project</h4>
+          <a href="https://plant-detect.com" target="_blank" class="btn">🔗 Live Demo</a>
+          <a href="https://github.com/user/plant-detector" target="_blank" class="btn">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="flip-card" data-aos="zoom-in">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3><i class="fas fa-ticket-alt"></i> Event Ticketing Platform</h3>
+          <p>Full-stack MERN app for booking tickets with admin dashboard.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>🌐 View Project</h4>
+          <a href="https://event-platform.com" target="_blank" class="btn">🔗 Live Demo</a>
+          <a href="https://github.com/user/ticketing-app" target="_blank" class="btn">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="flip-card" data-aos="zoom-in">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3><i class="fas fa-laugh-beam"></i> FunZone Web Hub</h3>
+          <p>Portal linking best online movie, game, music & TV platforms.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>🌐 View Project</h4>
+          <a href="https://funzone-hub.com" target="_blank" class="btn">🔗 Live Demo</a>
+          <a href="https://github.com/user/funzone" target="_blank" class="btn">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="flip-card" data-aos="zoom-in">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3><i class="fas fa-qrcode"></i> QR Code Generator</h3>
+          <p>Web app to generate QR codes for text, links & contact info.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>🌐 View Project</h4>
+          <a href="https://qrgen.io" target="_blank" class="btn">🔗 Live Demo</a>
+          <a href="https://github.com/user/qr-generator" target="_blank" class="btn">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="flip-card" data-aos="zoom-in">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3><i class="fas fa-seedling"></i> Crop & Weed Detection</h3>
+          <p>ML + YOLO model to classify crops & weeds from images.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>🌐 View Project</h4>
+          <a href="https://crop-weed-ml.com" target="_blank" class="btn">🔗 Live Demo</a>
+          <a href="https://github.com/user/crop-weed" target="_blank" class="btn">💻 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </section>
+<!--------------------- end projects section --------------------------->
+
+
+  <!--------------------- contact section -------------------------->
+  
+ <section id="contact" class="contact-section">
+  <h2>Let's Connect</h2>
+  <p class="contact-intro">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+  <div id="particles-contact"></div> <!-- Particle background -->
+
+  <form id="contact-form" action="mailto:sahanaccet@gmail.com" method="POST" enctype="text/plain" novalidate>
+    <div class="form-group">
+      <input type="text" name="name" id="name" required autocomplete="off" placeholder=" " />
+      <label for="name"><span class="icon">👤</span> Your Name</label>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" id="email" required autocomplete="off" placeholder=" " />
+      <label for="email"><span class="icon">✉️</span> Your Email</label>
+    </div>
+    <div class="form-group">
+      <textarea name="message" id="message" required placeholder=" "></textarea>
+      <label for="message"><span class="icon">💬</span> Your Message</label>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+ </section>
+
+ <div id="toast">Message sent successfully!</div>
+
+
+ <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Sahana. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub" class="footer-emoji" title="GitHub">🐱</a>
+      <a href="https://www.linkedin.com/in/sahana-m-9b017a284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn" class="footer-emoji" title="LinkedIn">🔗</a>
+      <a href="mailto:sahanaccet@gmail.com" aria-label="Email" class="footer-emoji" title="Email">✉️</a>
+      <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter" class="footer-emoji" title="Twitter">🐦</a>
+    </div>
+  </div>
+ </footer>
+
+</div>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+<script>
+  const burger = document.getElementById("burger");
+  const sidebar = document.getElementById("sidebar");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+
+  // Toggle sidebar
+  burger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    document.body.classList.toggle("sidebar-open");
+  });
+
+  // Close sidebar when a link is clicked (on small screens)
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        sidebar.classList.remove("active");
+        document.body.classList.remove("sidebar-open");
+      }
+    });
+  });
+
+  // Optional: Close on ESC key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sidebar.classList.contains("active")) {
+      sidebar.classList.remove("active");
+      document.body.classList.remove("sidebar-open");
+    }
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+<script>
+  const branches = document.querySelectorAll('.edu-branch');
+  const handleScroll = () => {
+    branches.forEach(branch => {
+      const pos = branch.getBoundingClientRect().top;
+      if (pos < window.innerHeight - 150) {
+        branch.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('load', handleScroll);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+    easing: 'ease-in-out',
+  });
+</script>
+
+<script>
+  const typed = new Typewriter('#typed-role', {
+    loop: true,
+    delay: 75,
+  });
+
+  typed
+    .typeString('MERN-Stack Developer 💻')
+    .pauseFor(1200)
+    .deleteAll()
+    .typeString('AI Enthusiast 🤖')
+    .pauseFor(1200)
+    .deleteAll()
+    .typeString('Data Science Student 📊')
+    .pauseFor(1200)
+    .deleteAll()
+    .typeString('Tech Explorer 🌐')
+    .pauseFor(1200)
+    .deleteAll()
+    .typeString('Data Analyst 📊')
+    .pauseFor(1200)
+    .start();
+</script>
+
+
+<script>
+  // Fade-in when section enters viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
