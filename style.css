@@ -21,7 +21,7 @@ body {
 
 /* General Section Styles */
 .section {
-  padding: 80px 20px;
+  padding: 90px 10px;
   max-width: 1200px;
   margin: auto;
   color: #fff;
@@ -52,7 +52,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 275px;
+  width: 250px;
   height: 100%;
   background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
   color: white;
@@ -124,8 +124,8 @@ body {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 0.2rem 1.5rem;   
+  gap: 20px;
+  padding: 0.1rem 1.5rem;   
   transition: all 0.4s ease;
   border-radius: 50px; 
 }
@@ -155,7 +155,7 @@ body {
   height: 100%;
   background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
   color: white;
-  padding: 20px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Push footer to bottom */
@@ -166,7 +166,8 @@ body {
   text-align: center;
   font-size: 0.8rem;
   color: #cccccc6a;
-  padding-top: 15px;
+  padding-bottom: 15px;
+
 
 }
 
@@ -359,8 +360,8 @@ body {
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #00eaff;
-  box-shadow: 0 0 20px #00eaffaa;
+  border: 4px solid #00bfff;
+  box-shadow: 0 0 10px #00eaffaa;
   transition: transform 0.3s ease;
 }
 
@@ -389,7 +390,7 @@ body {
 
 .profile-pic-wrapper img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 90px rgba(0, 255, 255, 0.995);
 }
 
 .profile-info {
@@ -405,12 +406,12 @@ body {
   top: 0; left: 0;
   width: 100%; height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,255,255,0.2) 10%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.13) 10%, transparent 80%);
   animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.6; }
+  0%, 100% { transform: scale(1); opacity: 0.1; }
   50% { transform: scale(1.1); opacity: 1; }
 }
 
@@ -672,7 +673,7 @@ blockquote {
 .view-projects-btn {
   display: inline-block;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 8px 40px;
   background: #00d4ff;
   color: #000;
@@ -1075,20 +1076,258 @@ blockquote {
 
 /* ------------------ end Projects Section------------- */
 
+/* ------------------------- Certificates Section -------------- */
+.certificates-section {
+  background: #0a192f;
+  color: #fff;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00bfff;
+}
+
+.section-title .highlight {
+  color: #00bfff;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin-bottom: 0.2rem;
+}
+.filter-btn {
+  background: transparent;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: #00bfff;
+  color: #000;
+}
+.sub-filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sub-filter-btn {
+  background: transparent;
+  border: 1.5px solid #00bfff;
+  color: #00bfff;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.sub-filter-btn.active,
+.sub-filter-btn:hover {
+  background: #00bfff;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Certificates Grid */
+.certificates-container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Certificate Card */
+.certificate-card {
+  width: 350px;
+  height: 246px;
+  display:inline-block ;
+  margin: 10px;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 191, 255, 0.2);
+  border: 3.5px solid #00bfff;
+  
+}
+
+.certificate-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: rgba(10, 25, 47, 0.95);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.certificate-image:hover img {
+  transform: scale(1.1);
+}
+
+.certificate-image:hover .certificate-overlay {
+  width: 100%;
+  left: 0;
+}
+
+.certificate-info {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.3s;
+}
+
+.certificate-image:hover .certificate-info {
+  opacity: 1;
+}
+
+.certificate-info h3 {
+  font-size: 1.3rem;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.certificate-info p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00c8ff, #4d2aeb);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background:linear-gradient(135deg, #4d2aeb,#00c6ff);
+  color: #010101;
+}
+
+.certificate-slider-container {
+  position: relative;
+  overflow:visible;
+  width: 100%;
+  z-index: 1000;
+  padding: 2rem 0;
+}
+
+.certificates-viewport {
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  position:relative;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-auto-flow: column; /* horizontal scrolling layout */
+  grid-template-rows: repeat(2, auto); /* two rows */
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+.slider-btn {
+  background: linear-gradient(135deg, #00c8ff, #4d2aeb);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.slider-btn:hover {
+  background:linear-gradient(135deg, #4d2aeb,#00c6ff);
+  transform: scale(1.1) translateY(-50%);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6);
+  opacity: 1;
+}
+
+.left-btn {
+  left: -35px;
+
+}
+
+.right-btn {
+  right: -45px;
+}
+
+
+
+/*----------------- Certificates Section end--------------------------*/
+
 
 /* ------------------------- Contact Section -------------- */
 /* Contact Section Base */
 .contact-section {
   position: relative;
-  padding: 1rem 2rem 6rem;
-  margin-left: 15px;
+  padding: 1rem 0rem 6rem;
+  margin-right: 1px;
+  margin-left: 250px;
+  max-width: 2000px;
   background: rgba(0, 10, 30, 0.8);
   text-align: center;
   overflow: hidden;
   color: #cfd8dc;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   justify-content: center;
 }
 
@@ -1120,6 +1359,7 @@ blockquote {
 
 /* Form Styles */
 .contact-section form {
+  justify-content: center;
   position: relative;
   z-index: 10;
   width: 100%;
@@ -1204,28 +1444,28 @@ blockquote {
 /* Button */
 .contact-section button {
   padding: 1rem 2rem;
-  background: #00bfff;
-  color: #002f4b;
+  background: linear-gradient(135deg, #00c6ff, #4d2aebda);
+  color: #ebe3e3ee;
   font-weight: 700;
   font-size: 1.1rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 5px 15px #00bfffaa;
+  box-shadow: 0 3px 5px #00bfff52;
 }
 
 .contact-section button:hover {
-  background: #009acd;
+  background: linear-gradient(135deg, #4d2aebda, #00c6ff);
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px #00bfffcc;
+  box-shadow: 0 5px 10px #00bfffcc;
 }
 
 /* Toast Notification */
 #toast {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 100px;
+  right: 500px;
   background: #00bfff;
   color: #002f4b;
   padding: 15px 25px;
@@ -1234,7 +1474,7 @@ blockquote {
   box-shadow: 0 3px 15px #00bfffbb;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s ease;
+  transition: opacity 10s ease;
   z-index: 1000;
 }
 
@@ -1247,26 +1487,27 @@ blockquote {
 /* Footer */
 .footer {
   background: #002f4b;
-  padding: 1.3rem 1rem;
+  padding: 1.3rem 8rem;
   text-align: center;
   color: #cfd8dc;
-  margin-left: 15px;
+  position: relative;
+  margin-left: 200px;
   font-size: 1.1rem;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .footer-content {
   max-width: 900px;
-  margin: auto;
+  margin:0%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 50%;
 }
 
 .footer-content p {
-  margin: 0;
+  margin-right: -65%;
   flex: 1 1 300px;
 }
 
