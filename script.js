@@ -128,7 +128,7 @@ const certificates = [
     title: "Technical Symposium",
     issuer: "M.Kumarasamy College of Engineering",
     year: "2023",
-    category: "other",
+    category: "s&h",
     subcategory: "null"
   },
   {
@@ -184,7 +184,7 @@ const certificates = [
     title: "Getting Started With Ai Bage",
     issuer: "IBM SkillsBuild",
     year: "2025",
-    category: "bage",
+    category: "bages",
     subcategory: "null"
   },
   {
@@ -192,7 +192,7 @@ const certificates = [
     title: "Guinness World Record Bage",
     issuer: "Microsoft",
     year: "2025",
-    category: "bage",
+    category: "bages",
     subcategory: "null"
   },
   {
@@ -200,7 +200,7 @@ const certificates = [
     title: "Microsoft AI Skillfest Bage",
     issuer: "Microsoft",
     year: "2025",
-    category: "bage",
+    category: "bages",
     subcategory: "null"
   },
   {
@@ -312,7 +312,7 @@ const certificates = [
     title: "iTech Hackfest-National Level",
     issuer: "PSG & SAP",
     year: "2023",
-    category: "hackathon",
+    category: "s&h",
     subcategory: "null"
   },
   {
@@ -384,7 +384,7 @@ const certificates = [
     title: "WWT All India Hackathon",
     issuer: "Shooting Stars foundation& WWT",
     year: "2025",
-    category: "hackathon",
+    category: "s&h",
     subcategory: "null"
   }
 ];
